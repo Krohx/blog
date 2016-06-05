@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>wGetting Them All!</title>
+
+    <link rel="stylesheet" href="./theme/css/normalize.css" />
+    <link rel="stylesheet" href="./theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="./theme/css/style.css" />
+    <link rel="stylesheet" href="./theme/css/pygments.css" />	
+    <script src="./theme/js/custom.modernizr.js"></script>
+
+    <!-- So Firefox can bookmark->"abo this site" -->
+        <link href="feeds/all.atom.xml" rel="alternate" title="Blog | Krohx" type="application/atom+xml">
+
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href=".">Blog | Krohx</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+    <li><a href="/" class="button secondary small">Home</a></li>
+    <li><a href="#about" class="button secondary small">About</a></li>
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="./save-web-for-offline.html" rel="bookmark"
+        title="Permalink to wGetting Them All!">wGetting Them All!</a></h3>
+    </header>
+
+<h6 class="subheader" title="2016-01-28T17:00:00+01:00">Thu 28 January 2016
+</h6>
+
+
+    <p>If you are in a location with internet connection issues, or limited by the amount of bandwidth you can afford, then there are ways you can leverage the resources that are useful to you on the web.</p>
+<p>Some websites or blogs have content arranged in order of chapters that I like to read in that order. And some others just appeal to me as troves of useful content that I would want to keep within easy reach. The challenge with this is that there are times when I have no active internet subcscription or connection, making such resources unavailable to me.</p>
+<p>Interestingly, it is possible for me to keep an entire website offline. With the help of some of tools, I could download the site for offline reading! This is <strong>particularly workable with static sites</strong> that have no interaction with the backend, other than delivering static pages to us -- so don't think of doing this with Facebook, or Quora. <strong>:)</strong></p>
+<p><br/></p>
+<p>There are two ways I do this:</p>
+<ol>
+<li>I use the <strong><a href="http://www.httrack.com/">HTTrack Website Copier</a></strong> software, which is available cross platform; and </li>
+<li><strong><a href="http://linux.die.net/man/1/wget">wget</a></strong>, I learnt about this one recently.</li>
+</ol>
+<p>I also use this approach to download documentations for offline reference, since they're mostly static.</p>
+<p>The most current version of HTTrack supports resumption of broken downloads. This is also built into wget, which is an old Linux tool.</p>
+<p>One issue I have observed with the latter, however, is that it doesn't seem to get the CSS style files accordingly; therefore, you may have aesthetic issues with it. I have not had this problem with HTTrack.</p>
+<p>HTTrack is multiplatform supported. There are versions for Android, Windows, and Linux, <a href="http://www.httrack.com/page/2/">downloadable here</a></p>
+<p>The typical command for wget is:</p>
+<p><code>$ wget --continue --wait=20 --limit-rate=20K -r -p -U [BROWSER] [URL_TO_SITE]</code></p>
+<p>For example:</p>
+<p><code>$ wget --continue --wait=20 --limit-rate=20K -r -p -U Mozilla http://takwas.github.io/</code></p>
+<p class="subheader">Category: <a href="./category/uncategorized.html">Uncategorized</a>
+
+    Tagged: 
+    <a href="./tag/wget.html">wget </a>
+    <a href="./tag/httrack.html">httrack </a>
+    <a href="./tag/download.html">download </a>
+    <a href="./tag/offline.html">offline </a>
+    <a href="./tag/save.html">save </a>
+    <a href="./tag/website.html">website </a>
+    <a href="./tag/internet.html">internet </a>
+    <a href="./tag/planet.html">planet </a>
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="./archives.html">Archives</a>
+            <li><a href="./tags.html">Tags</a>
+
+
+                <li><a href="http://krohx.github.io/blog/feeds/all.atom.xml" rel="alternate">Atom feed</a></li>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="./category/uncategorized.html">Uncategorized</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="http://github.com/krohx">github</a></li>
+            <li><a href="http://ng.linkedin.com/in/krohx">linkedin</a></li>
+            <li><a href="http://bitbucket.org/krohx">bitbucket</a></li>
+            <li><a href="http://facebook.com/krohx">Facebook</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+                <p>Blog | Krohx by Krohx</p>
+            </div>
+            </div>
+    </div>
+</footer>
