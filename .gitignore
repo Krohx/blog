@@ -1,3 +1,10 @@
-.DS_Store
-.*~
+gitnore
 *~
+*.swp
+*.pyc
+*.orig
+.hg
+*hgignore*
+*zedstate*
+*.sqlite
+migrations
